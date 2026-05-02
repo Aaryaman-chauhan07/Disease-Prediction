@@ -1,0 +1,42 @@
+create database diseasediagnosis;
+use diseasediagnosis;
+
+create table signup(username varchar(50), password varchar(50),
+contact_no varchar(12),
+email_id varchar(50),
+address varchar(50));
+
+create table hospitals(hospital_name varchar(50),
+specialities varchar(400),
+contact_no varchar(20),
+email varchar(50),
+address varchar(90),
+latitude varchar(30),
+longitude varchar(30));
+
+create table pharmacy(pharmacy_name varchar(50),
+description varchar(130),
+contact_no varchar(20),
+email varchar(50),
+address varchar(90),
+latitude varchar(30),
+longitude varchar(30));
+
+create table diagnostic(diagnostoc_name varchar(50),
+description varchar(130),
+contact_no varchar(20),
+email varchar(50),
+address varchar(90),
+latitude varchar(30),
+longitude varchar(30));
+
+create table medicines(disease varchar(300),
+medicines varchar(500));
+
+INSERT INTO `diagnostic` VALUES ('Vijaya Diagnostic Centre','All major diagnostic services available','4565432345','vijaya@gmail.com','Beside NIMS Hospital, Punjagutta Market','17.4225','78.4546'),('Medplus Diagnostic Labs','all screening available','8889997770','med@gmail.com','Shop 1, Ground Floor(G-2), FM AVEON , H.NO.8-1-523/127, Toli chowki','17.398613','78.415724');
+INSERT INTO `hospitals` VALUES ('Olive Hospital','acne,alcoholic hepatitis,chicken pox,chronic cholestasis,dimorphic hemmorhoids(piles),drug reaction,fungal infection','8887774443','olive@gmail.com','Nanal Nagar, Hyderabad, Telangana','17.394135','78.427273'),('Apollo Hospital','arthritis,bronchial asthma,cervical spondylosis,chronic cholestasis,common cold,dengue,diabetes,drug reaction,fungal infection,heart attack,hepatitis a,hypertension','7898098765','apollo@gmail.com','Road No.59, Jubilee Hills, Hyderabad, Andhra Pradesh, India','17.4276','78.4134'),('Germanten Hospital','allergy,arthritis,bronchial asthma,cervical spondylosis,dengue,diabetes','8889997770','germanten@gmail.com',' 4-8-138/1/B, opp:Pillar No 150, Attapur, Telangana 500048','17.367781','78.432861');
+INSERT INTO `medicines` VALUES ('Malaria','Atovaquone/Proguanil (Malarone), Chloroquine. Doxycycline'),('Allergy','Cetirizine, Antihistamines, Benadryl'),('pneumonia','Amoxicillin, Doxycycline, Azithromycin');
+INSERT INTO `pharmacy` VALUES ('Madani Pharmacy','All types of medicines available from all brands','7898098765','madani@gmail.com','9-4-134/2/A/2, 7 Tombs Rd, Raghava Colony, Aruna Colony, Toli Chowki, Hyderabad','17.3992','78.4074'),('Apollo Pharmacy','All types of medicines available from all brands','7898098765','apphar@gmail.com','kolkata, west bengal 700089, india','22.6095','88.4002');
+
+commit;
+

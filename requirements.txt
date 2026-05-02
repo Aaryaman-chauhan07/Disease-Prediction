@@ -1,0 +1,12 @@
+django
+tensorflow
+keras
+numpy
+pandas
+opencv-python
+matplotlib
+seaborn
+scikit-learn
+nltk
+pillow
+h5py
